@@ -16,5 +16,11 @@ pipeline {
                 }
             }
         }
+        stage("Deploying to Nexus"){
+            steps{
+                
+            
+            }
+        }
     }
 }
