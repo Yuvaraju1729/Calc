@@ -18,7 +18,9 @@ pipeline {
         }
         stage("Deploying to Nexus"){
             steps{
-                
+                withSonarQubeEnv('sonarqube'){
+                    sh 'mvn deploy'
+                }    
             
             }
         }
